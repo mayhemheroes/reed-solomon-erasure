@@ -1,0 +1,7 @@
+project: reed-solomon-erasure
+target: fuzz-encode-reconstruct
+
+cmds:
+  - cmd: /fuzz_encode_reconstruct
+  - cmd: /fuzz_encode_reconstruct_no_inst @@
+    libfuzzer: false
